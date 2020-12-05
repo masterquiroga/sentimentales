@@ -53,5 +53,6 @@ classify_emotion <- function(textColumns,algorithm="bayes",prior=1.0,verbose=FAL
   }
 
   colnames(documents) <- c("Enojo","Repulsion","Miedo","Alegria","Tristeza","Sorpresa","BEST_FIT")
+  documents <- as.data.frame(cbind(textColumns = textColumns, documents))
   return(documents)
 }

@@ -57,5 +57,6 @@ classify_polarity <- function(textColumns,algorithm="bayes",pstrong=0.5,pweak=1.
   }
 
   colnames(documents) <- c("POS","NEG","POS/NEG","BEST_FIT")
+  documents <- as.data.frame(cbind(textColumns = textColumns, documents))
   return(documents)
 }
