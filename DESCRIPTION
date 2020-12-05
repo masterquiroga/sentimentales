@@ -1,0 +1,14 @@
+Package: sentimentales
+Type: Package
+Title: Easy sentiment-analysis for spanish-based texts.
+Version: 0.0.1-rc1
+Author: Víctor G. G. Quiroga
+Maintainer: Víctor G. G. Quiroga <masterquiroga@protonmail.ch>
+Description: Spanish-based sentiment-analysis made easy.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    tm (>= 0.7-8)
+Depends: 
+    R (>= 2.10)
